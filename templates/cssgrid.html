@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        div {
+            box-shadow: 0 0 3px black;
+            /* x y blur spread color */
+            border-radius: 5px;
+            padding: .5rem;
+        }
+
+        h2 {
+            color: rgb(51, 50, 50);
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        section {
+            height: 300px;
+            background-color: bisque;
+            display: grid;
+            place-items: center;
+        }
+
+        article {
+            display: grid;
+            place-items: center;
+            gap: 1rem;
+        }
+
+        header {
+            background-color: #f0e9e9;
+            padding: .5rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        li {
+            padding: .5rem 1rem;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">Totam!</a></li>
+                <li><a href="#">Quos?</a></li>
+                <li><a href="#">Inventore?</a></li>
+                <li><a href="#">Repellendus!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptate voluptatem placeat mollitia rem
+                accusamus fugiat nesciunt maiores quia. Similique excepturi minus praesentium, odio nesciunt ea ab
+                molestias possimus ipsam!</p>
+        </div>
+        <div>
+            <h2>Deleniti impedit eius culpa et?</h2>
+            <p>Molestiae voluptatem odit fugiat. Quis, reiciendis. Expedita impedit illo, nulla quidem pariatur id
+                mollitia dolorem sit ut nobis dolores, ipsum reprehenderit natus omnis, deserunt nesciunt officiis nam
+                quae placeat corrupti!</p>
+        </div>
+        <div>
+            <h2>Atque id saepe autem magnam!</h2>
+            <p>Animi aut laborum quis sit eos, distinctio rerum ad, dolore quisquam ab porro ratione? Facilis eius ab
+                deleniti minima! Aliquam id ut totam officia quia vel omnis, alias optio vitae.</p>
+        </div>
+        <div>
+            <h2>Facere quis rem illo doloremque.</h2>
+            <p>At perspiciatis nemo eligendi? Nemo velit facilis officiis minus voluptas quibusdam maiores atque alias
+                earum deserunt voluptatum, cumque, asperiores eius nobis quis animi iure nihil harum, rerum minima
+                labore? Eveniet.</p>
+        </div>
+        <div>
+            <h2>Obcaecati iure iusto aliquid expedita.</h2>
+            <p>Nesciunt, non sed velit doloribus, iste quia maxime mollitia nihil consequuntur corporis, ea facere
+                minima omnis possimus nemo aliquid dicta error tenetur tempora dolorem. Officiis architecto velit
+                eligendi in amet!</p>
+        </div>
+        <div>
+            <h2>Ex minima delectus sed recusandae!</h2>
+            <p>Dolorem dolores facere quia incidunt vero assumenda? Architecto deleniti quidem autem repellendus dolor
+                perferendis ipsam deserunt recusandae aliquid, quasi minima, optio ipsum, nesciunt temporibus! Tempore
+                dolorum aperiam ducimus quasi eius?</p>
+        </div>
+    </main>
+    <section>
+        <article>
+            <h2>Start learning HTML</h2>
+            <button>Know more</button>
+        </article>
+    </section>
+</body>
+
+</html>

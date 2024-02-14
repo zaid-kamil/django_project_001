@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page demo 1</title>
+    <style>
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #efefef;
+            color: #333;
+        }
+
+        section {
+            height: 100vh;
+            /* 100% of the viewport height */
+        }
+
+        #s1 {
+            background-color: rgb(100, 176, 251);
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #leftcol {
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #rightcol {}
+
+        .logoarea {
+            display: flex;
+            justify-content: center;
+            padding: .5rem;
+        }
+
+        #logo {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 7rem;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        h1>span {
+            font-weight: bold;
+        }
+
+        .btnarea {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: white;
+            font-weight: 3rem;
+            padding: 1rem 2rem;
+            display: block;
+            width: 200px;
+            text-align: center;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="container">
+                <div id="leftcol">
+                    <div class="logoarea">
+                        <img src="logo.png" alt="" height="60" width="60">
+                        <span id="logo">Company<br>Name</span>
+                    </div>
+                    <div>
+                        <h1>
+                            Changing the world<br>
+                            <span>one app at a time</span>
+                        </h1>
+                    </div>
+                    <div class="btnarea">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div id="rightcol">
+                    <img src="hero.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>section 2</section>
+        <section>section 3</section>
+        <section id="s4">section 4</section>
+        <section>section 5</section>
+    </main>
+</body>
+
+</html>

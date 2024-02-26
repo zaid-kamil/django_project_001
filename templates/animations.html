@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .boxes {
+            width: 200px;
+            height: 200px;
+            background-color: #cff8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #b1 {
+            background-color: red;
+            transition: 300ms ease-in-out;
+        }
+
+        #b1:hover {
+            background-color: green;
+            border-radius: 100%;
+            color: white;
+
+        }
+
+        /* effect b3 on hover of b2 */
+        #b3 {
+            background-color: #f97e3c;
+            transition: 300ms ease-in-out;
+        }
+
+        #b2:hover~#b3 {
+            background-color: #f97e3c;
+            transform: scale(1.2) rotate(90deg) translate(-100px, -200px);
+        }
+
+        /* to and fro animation */
+        @keyframes toandfro {
+            0% {
+                transform: translateY(0);
+                background-color: rgb(240, 151, 151);
+            }
+
+            50% {
+                transform: translateY(-100px);
+                scale: .8;
+            }
+
+            100% {
+                background-color: rgb(47, 149, 218);
+                transform: translateX(100px);
+            }
+        }
+
+        .boxes:nth-child(6),
+        .boxes:nth-child(8),
+        .boxes:last-child {
+            animation: toandfro 500ms infinite ease-in-out alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="boxes" id="b1">Lorem.</div>
+        <div class="boxes" id="b2">Numquam.</div>
+        <div class="boxes" id="b3">Numquam!</div>
+        <div class="boxes animate__animated animate__bounce animate__infinite">Nesciunt!</div>
+        <div class="boxes animate__animated animate__slideInLeft">Voluptates!</div>
+        <div class="boxes">Tempore.</div>
+        <div class="boxes">Minus.</div>
+        <div class="boxes">Doloribus.</div>
+        <div class="boxes">Error!</div>
+        <div class="boxes">Provident.</div>
+    </section>
+
+</body>
+
+</html>
